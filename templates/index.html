@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Music Recommendation System</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="search">
+                <h2>Find Your Next Favorite Song</h2>
+                <form id="recommendationForm">
+                    <input type="text" id="song_name" placeholder="Enter a song name">
+                    <button type="submit">Get Recommendations</button>
+                </form>
+            </section>
+            <section class="recommendations">
+                <h2>Recommended Songs</h2>
+                <div id="recommendations">
+                    <!-- Recommendations will be inserted here -->
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Music Recommendation System. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
